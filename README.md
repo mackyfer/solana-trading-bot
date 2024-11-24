@@ -13,6 +13,7 @@ To run the script you need to:
 - Transfer some SOL to it.
 - Convert some SOL to USDC or WSOL.
   - You need USDC or WSOL depending on the configuration set below.
+  - You can get WSOL by converting SOL here: https://wrapmysol.com
 - Configure the script by updating `.env.copy` file (remove the .copy from the file name when done).
   - Check [Configuration](#configuration) section bellow
 - Install dependencies by typing: `npm install`
