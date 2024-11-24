@@ -9,7 +9,7 @@ The bot can monitor market conditions in real-time, such as pool burn, mint reno
 
 To run the script you need to:
 
-- Create a new empty Solana wallet
+- Create a new empty Solana wallet. (This is because you do not want to use your personal/main solana wallet. Never trust code you find online; always to be safe, create a burner wallet for interacting with bots/dapps.)
 - Transfer some SOL to it.
 - Convert some SOL to USDC or WSOL.
   - You need USDC or WSOL depending on the configuration set below.
