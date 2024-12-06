@@ -94,8 +94,12 @@ export class Bot {
       await getAccount(this.connection, this.config.quoteAta, this.connection.commitment);
     } catch (error) {
       logger.error(
-        `${this.config.quoteToken.symbol} token account not found in wallet: ${this.config.wallet.publicKey.toString()}`,
+        `${this.config.quoteToken.symbol} token account not found in wallet: ${this.config.wallet.publicKey.toString()}.`,
       );
+      if(this.config.quoteToken.symbol === 'SOL'){
+        logger.error('Wrapped Solana Token (WSOL) is required to proceeed. Visit https://wrapmysol.com to wrap your SOL token.')
+      }
+      
       return false;
     }
 
